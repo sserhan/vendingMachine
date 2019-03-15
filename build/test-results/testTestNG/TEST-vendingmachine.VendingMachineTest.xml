@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testsuite name="vendingmachine.VendingMachineTest" tests="20" skipped="0" failures="0" errors="0" timestamp="2019-03-11T16:39:33" hostname="LAPTOP-S88AF7GL" time="0.143">
+  <properties/>
+  <testcase name="testBuyItemWithExactPrice" classname="vendingmachine.VendingMachineTest" time="0.037"/>
+  <testcase name="testBuyItemWithExactPrice[0](COKE, [C50, C20, C10])" classname="vendingmachine.VendingMachineTest" time="0.001"/>
+  <testcase name="testBuyItemWithExactPrice[1](FANTA, [C50, C20, C10])" classname="vendingmachine.VendingMachineTest" time="0.0"/>
+  <testcase name="testBuyItemWithExactPrice[2](JUICE, [C100])" classname="vendingmachine.VendingMachineTest" time="0.0"/>
+  <testcase name="testBuyItemWithExactPrice[3](PEPSI, [C50, C20, C20])" classname="vendingmachine.VendingMachineTest" time="0.0"/>
+  <testcase name="testBuyItemWithExactPrice[4](SODA, [C100])" classname="vendingmachine.VendingMachineTest" time="0.001"/>
+  <testcase name="testBuyItemWithExactPrice[5](SPRITE, [C50, C20, C20])" classname="vendingmachine.VendingMachineTest" time="0.0"/>
+  <testcase name="testBuyItemWithExactPrice[6](WATER, [C50])" classname="vendingmachine.VendingMachineTest" time="0.0"/>
+  <testcase name="testBuyItemWithMorePrice" classname="vendingmachine.VendingMachineTest" time="0.017"/>
+  <testcase name="testBuyItemWithMorePrice[0](COKE, [C50, C20, C20])" classname="vendingmachine.VendingMachineTest" time="0.003"/>
+  <testcase name="testBuyItemWithMorePrice[1](FANTA, [C50, C20, C20])" classname="vendingmachine.VendingMachineTest" time="0.005"/>
+  <testcase name="testBuyItemWithMorePrice[2](JUICE, [C100, C10])" classname="vendingmachine.VendingMachineTest" time="0.003"/>
+  <testcase name="testBuyItemWithMorePrice[3](PEPSI, [C100])" classname="vendingmachine.VendingMachineTest" time="0.003"/>
+  <testcase name="testBuyItemWithMorePrice[4](SODA, [C100, C10])" classname="vendingmachine.VendingMachineTest" time="0.002"/>
+  <testcase name="testBuyItemWithMorePrice[5](SPRITE, [C100])" classname="vendingmachine.VendingMachineTest" time="0.001"/>
+  <testcase name="testBuyItemWithMorePrice[6](WATER, [C50, C10])" classname="vendingmachine.VendingMachineTest" time="0.001"/>
+  <testcase name="testItemInit" classname="vendingmachine.VendingMachineTest" time="0.001"/>
+  <testcase name="testRefund" classname="vendingmachine.VendingMachineTest" time="0.002"/>
+  <testcase name="testVendingMachine" classname="vendingmachine.VendingMachineTest" time="0.001"/>
+  <testcase name="testVendingMachineFactory" classname="vendingmachine.VendingMachineTest" time="0.002"/>
+  <system-out><![CDATA[]]></system-out>
+  <system-err><![CDATA[]]></system-err>
+</testsuite>
