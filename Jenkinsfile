@@ -5,7 +5,13 @@ pipeline {
             agent { label 'gradle' }
             steps {
                     sh "gradle clean"
-                      }
+                  }
+        }
+        stage('sonar'){
+            steps{
+                sh "gradle sonarqube"
+            }
+        }
     }
 
 }
