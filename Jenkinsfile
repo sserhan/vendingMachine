@@ -1,17 +1,24 @@
 pipeline {
-    agent none
+    agent any
+	tools{
+		maven 'Maven'
+		jdk 'jdk'
+	}
     stages {
-        stage('Build'){
-            agent { label 'gradle' }
+        stage('Build') { 
             steps {
-                    sh "gradle clean"
-                  }
-        }
-        stage('sonar'){
-            steps{
-                sh "gradle sonarqube"
+                bat 'gradle clean' 
             }
-        }
-    }
-
+	}
+	 stage('Install') {
+            steps {
+                bat 'gradle install'
+            }
+	 }
+	    stage('Sonar'){
+		    steps{
+		    bat 'gradle sonarqube -Dsonar.host.url=http://localhost:9000 -Dsonar.login=d9b8082d2e909663d06cf394f1b38e51e07e292a -Dsonar.analysis.mode=publish -Dsonar.projectKey=vendingMachine' 
+		    }
+	    }
+     }
 }
