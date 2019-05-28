@@ -12,7 +12,7 @@ pipeline {
 	}
 	 stage('Install') {
             steps {
-                bat 'gradle build'
+                bat 'gradle -Dskip.tests build'
             }
 	 }
 	    stage('Sonar'){
