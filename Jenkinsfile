@@ -16,7 +16,9 @@ pipeline {
             }
 	 }
 	    stage('Test'){
+		    steps{
 		    'gradle test'
+		    }
 	    }
 	    stage('Sonar'){
 		    steps{
