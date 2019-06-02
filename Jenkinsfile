@@ -17,7 +17,7 @@ pipeline {
 	 }
 	    stage('Test'){
 		    steps{
-		    'gradle test'
+		    bat 'gradle test'
 		    }
 	    }
 	    stage('Sonar'){
